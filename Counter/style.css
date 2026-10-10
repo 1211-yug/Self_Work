@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #833AB4;
+    background: linear-gradient(133deg, rgb(168, 65, 236) 32%, rgba(111, 59, 245, 1) 88%);
+}
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #e0d4f5;
+    text-align: center;
+}
+
+.card-body {
+    margin: 35px 0;
+}
+
+#count {
+    font-size: 80px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1 1 auto;
+    min-width: 100px;
+}
+
+.btn-decrease {
+    background-color: #ff3838;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 56, 56, 0.3);
+}
+
+.btn-decrease:hover {
+    background-color: #ff4d4d;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 56, 56, 0.5);
+}
+
+.btn-reset {
+    background-color: #f1f2f6;
+    color: #2f3542;
+    box-shadow: 0 4px 15px rgba(241, 242, 246, 0.3);
+}
+
+.btn-reset:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(241, 242, 246, 0.5);
+}
+
+.btn-increase {
+    background-color: #1dd1a1;
+    color: white;
+    box-shadow: 0 4px 15px rgba(29, 209, 161, 0.3);
+}
+
+.btn-increase:hover {
+    background-color: #10ac84;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(29, 209, 161, 0.5);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
